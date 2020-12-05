@@ -1,4 +1,4 @@
-#compdef _gh gh
+compdef _gh gh
 
 # zsh completion for gh                                   -*- shell-script -*-
 
