@@ -1,0 +1,1 @@
+/home/jscdev/conf/oh-my-zsh/custom/themes/jsc.zsh-theme
