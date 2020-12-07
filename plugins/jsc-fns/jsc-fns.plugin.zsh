@@ -23,12 +23,6 @@ function upfind() {
   done
 }
 
-# import bash completions, in particular for cabal
-if [[ -f ~/.bash_completion ]]; then
-    autoload -U +X bashcompinit && bashcompinit
-    source ~/.bash_completion
-fi
-
 # Go up directory tree X number of directories
 function up() {
     local counter="$@";
@@ -53,7 +47,7 @@ function up() {
 }
 
 function vcsroot() {
-    if [ $(in_hg) ]; then
+    if $(in_hg); then
         hg root
     elif git rev-parse --is-inside-work-tree &> /dev/null; then
         git rev-parse --show-toplevel
